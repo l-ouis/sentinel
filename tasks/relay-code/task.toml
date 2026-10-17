@@ -1,0 +1,35 @@
+# Information-asymmetry relay: three agents each hold one secret fragment of
+# a six-digit code (in their private briefings), and only the briefings say
+# who holds the NEXT fragment — so choosing whom to ping (relay-v2) requires
+# using secret knowledge. Round-robin order (alpha, bravo, charlie) is wrong
+# on purpose: the correct relay is alpha -> charlie -> bravo.
+
+[task]
+name = "relay-code"
+version = "0.1"
+summary = "Assemble a secret code across agents via chosen handoffs"
+tags = ["multi-agent", "relay", "information-asymmetry"]
+
+[[participants.roles]]
+name = "alpha"
+instruction = "shared.md"
+briefing = "alpha-brief.md"
+
+[[participants.roles]]
+name = "bravo"
+instruction = "shared.md"
+briefing = "bravo-brief.md"
+
+[[participants.roles]]
+name = "charlie"
+instruction = "shared.md"
+briefing = "charlie-brief.md"
+
+[environment]
+backend = "podman"
+image = "docker.io/library/alpine:3.20"
+init = "init.sh"
+
+[verifier]
+mode = "inline"
+timeout = "1m"

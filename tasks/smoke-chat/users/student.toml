@@ -1,0 +1,13 @@
+# A scripted user: the same words in every rollout, so a model comparison
+# measures the models and not the user simulator.
+
+[[steps]]
+say = "hey, can you get my notes.md off my laptop and onto my phone? i want to read it on the bus"
+to = "assistant"
+
+[[steps]]
+say = "thanks — is it definitely on the phone now?"
+to = "assistant"
+
+[[steps]]
+end = true

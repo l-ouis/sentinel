@@ -1,0 +1,24 @@
+# v1 headline task: a real local workflow. Transcribe mp3 lecture notes with
+# whisper, format the content into a typst doc that compiles.
+
+[task]
+name = "transcribe-typst"
+version = "0.1"
+summary = "Transcribe mp3 lecture notes with whisper and format them as a typst doc"
+tags = ["local-workflow", "milestone-1"]
+
+[[participants.roles]]
+name = "assistant"
+
+[environment]
+backend = "podman"
+build = "Containerfile"
+init = "init.sh"          # freshen mp3 mtimes so they read as recently recorded
+network_mode = "none"     # whisper weights + typst are baked in at build time
+
+[verifier]
+mode = "inline"
+timeout = "15m"
+
+[limits]
+max_wall = "30m"

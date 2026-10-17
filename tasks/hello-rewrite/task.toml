@@ -1,0 +1,22 @@
+# Milestone-1-shaped minimal task: stateless chat, disclosed, deterministic
+# verifier. Exercises the schema defaults.
+
+[task]
+name = "hello-rewrite"
+version = "0.1"
+summary = "Rewrite a passage to a target reading level without losing listed facts"
+tags = ["rewriting", "milestone-1"]
+
+[[participants.roles]]
+name = "assistant"
+shape = "session"
+
+[environment]
+backend = "chat"
+
+[verifier]
+# Placeholder task: the grader was never written. It said "inline", which the
+# chat backend cannot run (there is no container to run run.sh in) — "none" is
+# the honest state until a module grader lands here, and the task still runs.
+mode = "none"
+timeout = "2m"

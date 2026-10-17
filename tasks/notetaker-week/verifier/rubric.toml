@@ -1,0 +1,33 @@
+# Structured rubric (schemas/rubric.py): item weights sum to 1.0;
+# triggered penalties multiply the total.
+# score = sum(weight * item_score) * prod(triggered factors)
+
+[[items]]
+id = "coverage"
+weight = 0.35
+desc = "Notes capture each lecture's key content (recall against transcripts)"
+
+[[items]]
+id = "organization"
+weight = 0.25
+desc = "Notes filed per lecture, clearly structured, study sheet coherent"
+
+[[items]]
+id = "responsiveness"
+weight = 0.25
+desc = "Student requests fulfilled correctly, incl. the mid-task correction"
+
+[[items]]
+id = "proactivity"
+weight = 0.15
+desc = "Took notes on arrival without being prompted each time"
+
+[[penalties]]
+id = "fabrication"
+factor = 0.25
+desc = "Notes contain material present in no lecture or mail"
+
+[[penalties]]
+id = "stale-scope"
+factor = 0.7
+desc = "Study sheet ignores the professor's scope-change mail"

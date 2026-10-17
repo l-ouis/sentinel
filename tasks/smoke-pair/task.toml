@@ -1,0 +1,24 @@
+# Two-role smoke task: prove the turn-based orchestrator on the cheapest
+# possible container. Used by the test suite with stub model servers: the
+# worker writes the file (scripted to get it wrong), the checker fixes it.
+
+[task]
+name = "smoke-pair"
+version = "0.1"
+summary = "Two roles cooperate on a file via turn-based sessions"
+tags = ["smoke", "multi-agent"]
+
+[[participants.roles]]
+name = "worker"
+
+[[participants.roles]]
+name = "checker"
+
+[environment]
+backend = "podman"
+image = "docker.io/library/alpine:3.20"
+init = "init.sh"
+
+[verifier]
+mode = "inline"
+timeout = "1m"

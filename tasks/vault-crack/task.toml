@@ -1,0 +1,38 @@
+# The real asymmetric lock: the vault is a harness-side custom tool
+# (tools.py), so the code and lock logic never exist in the agent-visible
+# world — nothing to cat, nothing to tamper with. The six-digit code is
+# split across the two briefings, and per-role tool gating means only the
+# operator can even attempt the lock: the scout must relay its half.
+# Attempts are limited (the lock jams), so guessing loses.
+#
+# Run with:  sentinel run tasks/vault-crack --orchestration relay-v3:e8 \
+#              --bind scout=<model> --bind operator=<model>
+
+[task]
+name = "vault-crack"
+version = "0.1"
+summary = "Open a harness-side vault lock with a code split across agents"
+tags = ["multi-agent", "custom-tools", "information-asymmetry"]
+
+[[participants.roles]]
+name = "scout"
+instruction = "shared.md"
+briefing = "scout-brief.md"
+tools = ["run_shell"]        # no unlock: asymmetric capability, not just info
+
+[[participants.roles]]
+name = "operator"
+instruction = "shared.md"
+briefing = "operator-brief.md"
+
+[environment]
+backend = "podman"
+image = "docker.io/library/alpine:3.20"
+init = "init.sh"
+
+[tools]
+module = "tools.py"
+
+[verifier]
+mode = "inline"
+timeout = "1m"

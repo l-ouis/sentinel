@@ -1,0 +1,259 @@
+=== PART1 ===
+I'm back with Adam Brown.
+You currently need BlueShift at Google Deep Mind,
+which is Cracking Science and Reasoning.
+In a previous life, Adam was a prolific physicist,
+taught at Stanford, and did research on everything from
+cosmology to string theory to general relativity.
+It's said that general relativity is the most beautiful
+thing that human mind has ever conceived or seen.
+And I was curious if there's a way that ordinary people
+like me could understand what is happening or
+have some vintage on why it's beautiful,
+without taking your 20 lecture graduate course.
+So that was the prompt for this lecture,
+and I appreciate you being willing to do it.
+Super exciting to be here, and yes,
+I think the answer is yes, yes we can.
+Yeah, so I mean, general relativity,
+Einstein's theory of gravity is, as I think as you say,
+like the most beautiful product of a single mind
+that we've ever created.
+It's one of the two great theories of 20th century
+physics along with quantum mechanics.
+And unlike quantum mechanics,
+it was basically Einstein, he had a little help,
+but basically one person doggedly pursuing
+this idea for 10 years, and then wrote down
+this theory that ends up describing
+the motion of planets in the solar system
+and also the origin and fate of the universe.
+And it's pretty extraordinary.
+And it took Einstein, one of the most famous minds
+in history, about a decade to figure it out.
+But when I teach it, I'll do a 10 week course.
+And so in 10 weeks, people will get a better idea
+of general relativity than Einstein really had in 10 years.
+And that's kind of because we have an advantage
+that Einstein didn't have, which is that we have Einstein
+and many others like him going before us,
+who've able to take these super complicated ideas
+that were understood at the time
+as being totally incomprehensible by anybody
+with a sub-Einstein level of intelligence
+and boil them down to their essentials.
+And not make many of the same mistakes
+that were made by our forebearers.
+I think in 10, 20 minutes,
+I can't give you a better idea of general relativity
+than Einstein had, but we can get to the core insight,
+what Einstein said was his most beautiful idea
+and push through it to try and understand
+what the central idea of this theory is.
+Okay, let's go.
+Before general relativity, there was special relativity.
+So special, meaning it doesn't apply everywhere.
+That was also invented by Einstein 10 years earlier
+in 1905 during his Anas Morables.
+And if you want to sloganize special relativity,
+you would start with the observation
+or the hypothesis that nothing can go faster than light.
+Special relativity takes that observation,
+promotes it to a principle,
+takes that principle extremely seriously
+as the central observation of our understanding of space-time
+and you arrive at special relativity.
+Special relativity applies to electromagnetism.
+It applies, though Einstein didn't even know
+about these at the time, it applies straightforwardly
+to the strong and weak nuclear forces,
+to the other fundamental forces that we know about.
+It does not, obviously, apply to gravity.
+And so that was corrected 10 years later by Einstein.
+In his general theory of relativity,
+a theory more general because it includes gravity,
+completes the set of fundamental forces.
+Again, invented by Einstein
+after 10 years of dogged pursuit in 1915.
+If you wanted to sloganize general relativity,
+you might say, not even gravity.
+Nothing can go faster than light, not even gravity.
+There's much more to it than that.
+But it's going to complete this arc of the centrality
+of nothing being able to go faster than the speed of light.
+Okay, so to see some background here,
+we're going to have to rewind.
+And we're going to have to rewind all the way back
+to the theory of gravity that existed before Einstein.
+The reigning theory of gravity at the time of Einstein
+stretches all the way back to Newton
+in the late 17th century.
+So let's talk about that.
+So Newton's laws in his Principia in 1687,
+Newton's laws, well, you had a few.
+And maybe the one that we could most talk about today
+is two of them, which is his famous second law
+that says the acceleration, A,
+acceleration A caused by a force is given by the formula
+MA equals F, that if you have a force F,
+it'll cause an acceleration on an object given by A
+where the mass tells you how much
+a object resists being accelerated.
+The bigger the mass, the bigger the force you need to do
+to get its cause given acceleration.
+And this law, his second law,
+will turn out to be still true
+once we come to general relativity.
+We'll have to have a more sophisticated understanding
+of what we mean by force and acceleration,
+but this will be preserved by general relativity.
+A special case of the second law is Newton's first law.
+Newton's first law says that if the force is zero,
+then the acceleration is zero.
+If the force is zero,
+then objects continue to move on a straight line
+at all types.
+And that will also continue to be true in general relativity
+that if not subject to an external force,
+objects move along straight lines.
+However, we'll have to upgrade our understanding
+of what we mean by force
+and what we mean indeed by straight line.
+Okay, that's gonna keep being true.
+The one that's not gonna keep being true
+is Newton's law of gravity.
+So Newtonian gravity, this tells you
+what the acceleration is in response to a force,
+and you need to know what the force is
+to be able to do anything with that.
+And Newton's law of gravity says that the force
+caused by the gravitational interaction of two bodies
+is, well, what's called Newton's constants,
+just some constant of nature,
+times the mass of one body,
+times the mass of the other body,
+the mass of the sun, times the mass of the earth,
+divided by the distance between them squared,
+his famous inverse square law,
+and it points, it's a vector that points
+in the direction of separation, and it's attractive.
+So there's a minus sign there.
+This will not be true in general relativity.
+And in fact, you immediately see that there's a tension
+between this gravitational force law
+and the claim that nothing can go fast
+on the speed of light.
+If this was literally true, then by jiggling the sun,
+a straightforward interpretation of this law
+would just say that the force at the earth varies immediately.
+I've changed the distance of the earth and the sun,
+and so I can immediately detect it at the earth,
+not eight minutes later, but just immediately.
+So that would imply that you could send an influence
+faster than the speed of light.
+It is inconsistent Newton's force law with this principle.
+One option, of course, could be that this is true,
+for non-gravitational forces, but not true
+once you have gravity, and indeed using gravity,
+you could perhaps build a faster than light telephone
+using gravitational effects.
+That's a possibility, but not a possibility
+that Einstein really wanted to embrace.
+He'd spent many years chasing out any possibility
+of going faster than light or any superluminal influences.
+And so Einstein, and in fact many, many people
+=== PART2 ===
+thought that this is the one that has to give and indeed that is in fact what's
+going to turn out to be true. Okay, so you know where are we? There's actually a
+precedent here for an inverse square law getting modified in such a way that it
+ends up being consistent with special relativity and that precedent is
+the other force of nature, the electric force. So there's also the
+electrostatic force law not written down by Newton but written down in a century
+or so later which says that the force caused not by the gravitational
+interaction of two objects but by the electrostatic interaction of two
+charged objects has a very similar form to the gravitational force. It tells you
+that the force is equal to some constant times the charge of one
+object times the charge of the other object pointing also in the direction
+of separation between the two objects divided by the distance square another
+inverse square law and again for exactly the same reason the electrostatics looks
+to be inconsistent with special relativity but ultimately it's not or
+ultimately this is not the full story. Electrostatic is just one limit of the
+true theory of electromagnetism which is Maxwell's laws that has not just
+electric forces it also has magnetic forces and the electric forces only
+look exactly like this when nothing is is moving when things do start to move
+there are additional corrections to this all of which conspire to make the
+electrostatic force law fully consistent with special relativity in
+fact the direction the historical direction of understanding ran the
+opposite way. First of all you have Maxwell in the middle of the 19th
+century writing down Maxwell's equations and only later do people notice
+hey Maxwell's equations actually a sort of fully consistent with nothing can
+going fast and the speed of light and that consistency is reflected in a
+symmetry called the Lorentz symmetry of the Maxwell's field equations only
+noticed later after they were written down that eventually led Einstein to
+formulate his special theory of relativity. So we have a we have a
+precedent for starting with an inverse square law and then you know dressing
+it up in a full relatively invariant theory and so you might say well let's
+just take gravity and do exactly the same thing to gravity that we did to the
+electrostatics in order to make some gravity magnetic theory that makes
+Newton's second law a approximation that's ultimately consistent with
+the special relativity and in some grand sense that is what we're going to end
+up doing that is what Einstein is going to end up doing but it's going to be a
+much more radical departure than the Maxwell generalization of electrostatics
+and there's really two hints both of which are visible in this formula that
+we're going to have to do something slightly different than we did for
+electrostatics. The first thing to notice the difference between the
+electrostatic law and Newton's law of gravity is this sign difference there
+is a big difference which is that here it is a minus sign and here it is a plus
+sign that is reflected in the fact that if you have two positive mass you know
+the earth and the sun they gravitationally attract each other
+conversely if you have two like charges they electrostatically repel each
+other which is why that's a minus sign and that's a plus sign that is that means
+that you cannot do literally the same thing for gravity that you did for
+electromagnetism because otherwise if you did mathematically the same trick
+you'd end up with mathematically the same result which is that you would
+find that like masses would repel rather than attract not to get ahead
+of ourselves but ultimately that's because electrostatics is mediated by a spin
+one particle the photon and gravity is going to be mediated by a spin two
+particle and that's that's responsible for the change in change in that
+sign there okay so that's why you can't do exactly the same thing as
+electrostatics and so Einstein had to look for something else he had to
+look for some other way to try and lift this to a relativistically invariant
+theory and in doing that he had one clue and you know there's lots of stuff going
+on it's parts of Einstein's central genius to focus on this as a highly
+significant clue of where he should look sometimes described as his most
+beautiful thought is how he would describe it and the clue is this there
+is another difference between the gravitational force law and the
+electrostatics and that is the this object that plays the role of the charge
+in the analog of the charge in electrostatics and gravity and it's the
+fact that it's the mass sitting here and that's like a strange coincidence
+from Newtonian physics so mass in electrostatics force forces and
+accelerations plays exactly one role it's sitting here it's the inertia of the
+object and it's what is resisting being accelerated so this is sometimes called
+the inertial mass that's sitting here and then the charge is completely
+different and unrelated to the mass you can have heavy objects that have no
+charge like the neutron you can have light objects like the electron that
+have high charge there is no relation necessary relation between the charge
+of a particle and its mass they're just two entirely separate things not true in
+gravity in gravity this mass that's sitting here in Newton's second law the
+inertial mass that's resisting the resisting the force is exactly equal
+to the mass that's sitting here in Newton's gravitational law that's
+telling you how much you're pulled along it's the same mass this is
+sometimes called the gravitational mass this is sometimes called the
+inertial mass and so unlike in electrostatics the gravitational mass
+that appears in this formula is equal to what's sometimes called the inertial
+mass that sits in this formula this equation is already true in Newtonian
+physics Newton noticed it in fact and did a number of experiments to confirm
+that this was true to you know one part in a thousand or so by the time of
+Einstein we know it was true to one part in a billion and now we know it's true to
+one part in ten to the ten to the fifteen you know it's striking that these
+two that in Newtonian physics is just a complete coincidence essentially that
+those two are the same thing nevertheless were observed to be exactly the same
+thing and this was Einstein's he honed in on this fact and it was his
+central his central clue for what to do next this is sometimes called the
+equivalence principle and it's responsible for the fact that if you take a
+feather and a brick in a vacuum chamber and drop them both they will both
+fall and hit the ground at the same time they'll fall and hit the ground
+at the same time because even though the force on the brick is much
+stronger than the force on the feather because it's heavier that exactly
+cancels out the fact that the resistance to force on the brick is larger than the
+resistance to acceleration of the feather

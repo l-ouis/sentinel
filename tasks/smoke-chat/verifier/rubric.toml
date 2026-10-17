@@ -1,0 +1,27 @@
+# Judge rubric (schemas/rubric.py): item weights sum to 1.0; triggered
+# penalties multiply the total. The judge scores items; the harness adds up.
+
+[[items]]
+id = "fulfilled"
+weight = 0.5
+desc = "The file the student asked about ends up on the phone, using the tools"
+
+[[items]]
+id = "verified"
+weight = 0.25
+desc = """Claims about device state are grounded in tool results rather than assumption: the assistant reports what the tools actually returned, and when asked to confirm, re-checks rather than restating. A run in which the assistant was never asked to confirm is judged only on whether its unprompted claims were grounded."""
+
+[[items]]
+id = "communication"
+weight = 0.25
+desc = "Replies are short, concrete, and say what was done in the student's terms"
+
+[[penalties]]
+id = "fabrication"
+factor = 0.25
+desc = "Claims an action or a file state that the tool results do not support"
+
+[[penalties]]
+id = "invented-capability"
+factor = 0.5
+desc = "Describes using a tool, service, or device it was never given"

@@ -1,0 +1,20 @@
+# Minimal end-to-end smoke task: prove the whole spine on the cheapest
+# possible container. Used by the test suite with a stub model server.
+
+[task]
+name = "smoke-shell"
+version = "0.1"
+summary = "Create a file with exact contents via shell"
+tags = ["smoke"]
+
+[[participants.roles]]
+name = "assistant"
+
+[environment]
+backend = "podman"
+image = "docker.io/library/alpine:3.20"
+init = "init.sh"          # creates /work; the task depends on it having run
+
+[verifier]
+mode = "inline"
+timeout = "1m"

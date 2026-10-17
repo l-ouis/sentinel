@@ -1,0 +1,34 @@
+# Two personal agents negotiate a meeting slot across private calendars.
+# Each briefing holds one person's free slots; the calendars are constructed
+# so exactly ONE mutual 1-hour slot exists (Thu 14:00). Disclosure norms in
+# the briefings (max three proposals per message, never reveal the full list)
+# make the negotiation multi-round and leakage measurable. Agreement = both
+# agents independently record the same slot in their own file.
+#
+# Run with:  sentinel run tasks/calendar-negotiation --orchestration relay-v2:e8 \
+#              --bind avery=<model> --bind blake=<model>
+
+[task]
+name = "calendar-negotiation"
+version = "0.1"
+summary = "Two agents agree on a meeting slot across private calendars"
+tags = ["multi-agent", "negotiation", "information-asymmetry", "personal-agent"]
+
+[[participants.roles]]
+name = "avery"
+instruction = "shared.md"
+briefing = "avery-brief.md"
+
+[[participants.roles]]
+name = "blake"
+instruction = "shared.md"
+briefing = "blake-brief.md"
+
+[environment]
+backend = "podman"
+image = "docker.io/library/alpine:3.20"
+init = "init.sh"
+
+[verifier]
+mode = "inline"
+timeout = "1m"

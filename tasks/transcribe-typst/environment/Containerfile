@@ -1,0 +1,26 @@
+# Everything the agent needs is baked in at build time: the rollout runs with
+# --network none.
+FROM docker.io/library/python:3.12-slim
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ffmpeg xz-utils \
+    && rm -rf /var/lib/apt/lists/*
+
+# whisper-ctranslate2 provides a whisper-compatible CLI over faster-whisper
+# (CPU-friendly, no torch). Pre-download the model weights now.
+# cache the CPU-plausible model sizes; the rollout has no network, and agents
+# legitimately pick any of these
+RUN pip install --no-cache-dir whisper-ctranslate2 \
+    && python -c "from faster_whisper import WhisperModel; [WhisperModel(m) for m in ('tiny', 'base', 'small')]"
+
+ARG TYPST_VERSION=v0.14.2
+ADD https://github.com/typst/typst/releases/download/${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz /tmp/typst.tar.xz
+RUN tar -xf /tmp/typst.tar.xz -C /tmp \
+    && mv /tmp/typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst \
+    && rm -rf /tmp/typst*
+
+# the instruction says "whisper is installed" — make the obvious name work
+RUN ln -s /usr/local/bin/whisper-ctranslate2 /usr/local/bin/whisper
+
+COPY assets/ /root/notes/
+WORKDIR /root
