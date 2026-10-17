@@ -91,6 +91,9 @@ v2/v3 variants keep persistent per-role context across turns.
 
 ## Tasks
 
+The tasks shipped here are placeholders and examples. They exist to exercise
+the harness, not as a benchmark; expect them to be rewritten or dropped.
+
 | Task | Shape |
 |---|---|
 | smoke-shell, smoke-pair, smoke-chat | harness smoke tests |
